@@ -1,5 +1,11 @@
 package util;
 
-public class MyArray {
+public class MyArray implements Visitable {
+
+	@Override
+	public void accept(Visitor visitor) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

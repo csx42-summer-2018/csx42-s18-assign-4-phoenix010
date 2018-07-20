@@ -10,14 +10,14 @@ public class Driver {
 		// TODO Auto-generated method stub
 		String input = args[0];
 		FileProcessor file = new FileProcessor(input);
-				
-		String line;
+				//path of file: 	/home/aditya/Desktop/input.txt
+		int line;
 		
-		while((line = file.readLine()) != null) { 
+		while((line = file.nextInt()) != -12083) { 
 			
-			String splitLine[] = line.split(":");
-			int value = Integer.parseInt(splitLine[0]);
-		
+//			String splitLine[] = line.split(":");
+			
+		System.out.println(line);
 
 
 	}
