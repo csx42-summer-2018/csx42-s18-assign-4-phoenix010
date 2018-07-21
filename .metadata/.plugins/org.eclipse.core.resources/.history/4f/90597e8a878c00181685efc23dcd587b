@@ -1,0 +1,27 @@
+package maxKVisitors.util;
+
+import maxKVisitors.driver.Driver;
+
+public class PopulateVisitor implements Visitor {
+
+	@Override
+	public int vist(MyArray array) {
+		String line = Driver.getInput(input);
+		
+		Fileprocessor file = new FileProcessor(line);
+		while((line = file.nextInt()) != -12083) { 
+//			return line;
+		}
+		return line;
+		
+		
+	}
+	
+
+	@Override
+	public int visit(MyVector vector) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

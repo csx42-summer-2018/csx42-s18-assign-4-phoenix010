@@ -7,7 +7,7 @@ public class MyArray implements Visitable {
 	private ArrayList<Integer> myArray ;
 
 	public MyArray() {
-		this.myArray = new ArrayList();
+		this.myArray = new  ArrayList();
 	}
 	public void insertElements() {
 		

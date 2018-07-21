@@ -12,27 +12,22 @@ public class PopulateVisitor implements Visitor {
 		this.input = input;
 	}
 	
-	public int readFile() throws IOException {
+	public void readFile(String input) throws IOException {
 		FileProcessor file = new FileProcessor(input);
 		int line;
 		while((line = file.nextInt()) != -12083) {
-			return line;
+			System.out.println(line);
 		}
-		return 0;
+		
+		
+		
+		
 	}
 	
 	
 	@Override
 	public int vist(MyArray array) {
-		try {
-		int input = readFile();
-		return input;
-		}catch(IOException ex) {
-			ex.printStackTrace();
-			
-		}
 		return 0;
-		
 //		String line = Driver.getInput(input);
 		
 		

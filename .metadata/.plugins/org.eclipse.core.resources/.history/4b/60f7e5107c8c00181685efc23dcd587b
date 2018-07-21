@@ -1,0 +1,24 @@
+package maxKVisitors.util;
+import 
+
+public class PopulateVisitor implements Visitor {
+
+	@Override
+	public int vist(MyArray array) {
+		int line;
+		Fileprocessor file = new FileProcessor();
+		while((line = file.nextInt()) != -12083) { 
+//			return line;
+		}
+		return line;
+		
+		
+	}
+
+	@Override
+	public int visit(MyVector vector) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

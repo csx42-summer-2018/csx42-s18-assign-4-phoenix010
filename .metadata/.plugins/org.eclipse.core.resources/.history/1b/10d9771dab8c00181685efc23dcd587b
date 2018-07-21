@@ -1,14 +1,9 @@
 package maxKVisitors.util;
 
-import java.util.ArrayList;
-
 public class MyArray implements Visitable {
 	
-	private ArrayList<Integer> myArray ;
+	private ArrayList<Integer> myArray = new ArrayList();
 
-	public MyArray() {
-		this.myArray = new ArrayList();
-	}
 	public void insertElements() {
 		
 		

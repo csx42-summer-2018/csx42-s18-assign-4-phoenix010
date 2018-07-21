@@ -23,15 +23,10 @@ public class PopulateVisitor implements Visitor {
 	
 	
 	@Override
-	public int vist(MyArray array) {
-		try {
+	public int vist(MyArray array) throws IOException {
 		int input = readFile();
 		return input;
-		}catch(IOException ex) {
-			ex.printStackTrace();
-			
-		}
-		return 0;
+		
 		
 //		String line = Driver.getInput(input);
 		
