@@ -1,0 +1,13 @@
+package maxKVisitors.util;
+
+import util.Visitor;
+
+public class MyVector implements Visitable {
+
+	@Override
+	public void accept(Visitor visitor) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

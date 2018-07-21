@@ -1,0 +1,9 @@
+package util;
+
+import maxKVisitors.util.MyArray;
+
+public interface Visitor {
+	void vist(MyArray array);
+	void visit(MyVector vector);
+
+}

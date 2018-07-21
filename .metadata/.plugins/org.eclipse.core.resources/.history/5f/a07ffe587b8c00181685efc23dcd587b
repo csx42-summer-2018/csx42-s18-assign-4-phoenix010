@@ -1,0 +1,23 @@
+package maxKVisitors.util;
+
+import util.Visitor;
+
+public class MyArray implements Visitable {
+
+	public void insertElements() {
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	@Override
+	public void accept(Visitor visitor) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
