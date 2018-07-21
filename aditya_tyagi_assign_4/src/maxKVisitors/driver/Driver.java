@@ -5,7 +5,7 @@ package maxKVisitors.driver;
 
 import java.io.IOException;
 
-import maxKVisitors.util.FileProcessor;
+
 import maxKVisitors.util.MyArray;
 import maxKVisitors.util.MyVector;
 import maxKVisitors.util.PopulateVisitor;
@@ -17,16 +17,29 @@ public class Driver {
 		
 	
 		String input = args[0];
+		String k = args[1];
 		PopulateVisitor ppt = new PopulateVisitor(input);
 
 
 		MyArray arr = new MyArray();
+		MyArray arr1 = new MyArray();
+		MyVector vector1 = new MyVector();
+		MyVector vector2 = new MyVector();
+		 //populatevisitor is called
+
 		System.out.println("Our ArrayList is: ");
-		arr.accept(ppt); //populatevisitor is called
+		arr.accept(ppt);
+		arr1.accept(ppt);
+		System.out.println(arr.getMyArr());
+		System.out.println(arr1.getMyArr());
 		
-		MyVector vectors = new MyVector();
+		
+		
 		System.out.println("Our Vectors are as follows");
-		vectors.accept(ppt);
+		vector1.accept(ppt);
+		vector2.accept(ppt);
+		System.out.println(vector1.getVec());
+		System.out.println(vector2.getVec());
 		
 		
 		
@@ -41,21 +54,11 @@ public class Driver {
 		
 		
 		
-		
-//		int val = file.nextInt();
-//		System.out.println(val);
-		
-		
-//		int line;
-//		while((line = file.nextInt()) != -12083) { 
-//			System.out.println(line);
-//		}
+
 	
 	
 	}
 	
-	public static String getInput(String input) {
-		return input;
-	}
+	
 }
 

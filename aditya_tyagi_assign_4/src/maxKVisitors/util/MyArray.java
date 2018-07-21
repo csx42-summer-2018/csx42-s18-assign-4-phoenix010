@@ -2,19 +2,24 @@ package maxKVisitors.util;
 
 import java.util.ArrayList;
 
-public class MyArray implements Visitable {
+public class MyArray implements Visitable, Insertion {
 	
 	private  ArrayList<Integer> myArr;
 
 	public MyArray() {
-		this.myArr = new ArrayList();
+		this.myArr = new ArrayList<Integer>();
 	}
 	public void insertElements(int input) {
 		myArr.add(Integer.valueOf(input));
-		System.out.println(myArr);
+//		System.out.println(myArr);
 	}
 	
 	
+	
+	
+	public ArrayList<Integer> getMyArr() {
+		return myArr;
+	}
 	@Override
 	public int accept(Visitor visitor) {
 		

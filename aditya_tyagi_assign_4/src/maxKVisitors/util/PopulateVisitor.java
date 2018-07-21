@@ -60,7 +60,7 @@ public int visit(MyArray myArray) {
 		while((line = file.nextInt()) != -12083) {
 			myArray.insertElements(line);
 		}
-		return -12083;
+		
 	
 		
 		
@@ -75,7 +75,7 @@ public int visit(MyArray myArray) {
 			ex.printStackTrace();
 			
 		}
-		return -12083;
+		return -1;
 }
 
 }

@@ -3,7 +3,7 @@ package maxKVisitors.util;
 
 import java.util.Vector;
 
-public class MyVector implements Visitable {
+public class MyVector implements Visitable, Insertion {
 
 	private  Vector<Integer> vec;
 	
@@ -13,17 +13,12 @@ public class MyVector implements Visitable {
 	}
 	public void insertElements(int input) {
 		vec.add(Integer.valueOf(input));
-		System.out.println(vec);
+//		System.out.println(vec);
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
+	public Vector<Integer> getVec() {
+		return vec;
+	}
 	@Override
 	public int accept(Visitor visitor) {
 		

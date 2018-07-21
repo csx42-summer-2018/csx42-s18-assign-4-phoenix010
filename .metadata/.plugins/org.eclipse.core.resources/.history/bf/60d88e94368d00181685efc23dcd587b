@@ -1,0 +1,29 @@
+package maxKVisitors.util;
+
+
+import java.util.Vector;
+
+public class MyVector implements Visitable {
+
+	private  Vector<Integer> vec;
+	
+	public MyVector() {
+		this.vec = new Vector<>();
+		
+	}
+	public void insertElements(int input) {
+		vec.add(Integer.valueOf(input));
+//		System.out.println(vec);
+	}
+	
+	public Vector<Integer> getVec() {
+		return vec;
+	}
+	@Override
+	public int accept(Visitor visitor) {
+		
+		 return visitor.visit(this);
+		
+		
+	}
+}
