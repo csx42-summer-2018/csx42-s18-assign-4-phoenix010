@@ -4,25 +4,21 @@ import java.util.ArrayList;
 
 public class MyArray implements Visitable {
 	
-	private ArrayList<Integer> myArray ;
+	private  ArrayList<Integer> myArr;
 
 	public MyArray() {
-		this.myArray = new ArrayList();
+		this.myArr = new ArrayList();
 	}
-	public void insertElements() {
-		
-		
-		
-		
-		
-		
+	public void insertElements(int input) {
+		myArr.add(Integer.valueOf(input));
+		System.out.println(myArr);
 	}
 	
 	
 	@Override
-	public void accept(Visitor visitor) {
+	public int accept(Visitor visitor) {
 		
-		// return visitor.visit(MyArray);
+		 return visitor.visit(this);
 		
 		
 	}

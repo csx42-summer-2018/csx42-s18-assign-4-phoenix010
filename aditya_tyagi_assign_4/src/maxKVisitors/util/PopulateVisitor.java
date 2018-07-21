@@ -3,7 +3,7 @@ import maxKVisitors.util.FileProcessor;
 
 import java.io.IOException;
 
-import maxKVisitors.driver.Driver;
+
 
 public class PopulateVisitor implements Visitor {
 	private String input; 
@@ -21,30 +21,26 @@ public class PopulateVisitor implements Visitor {
 		return 0;
 	}
 	
+@Override
+	public int visit(MyVector vector) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+@Override
+public int visit(MyArray myArray) {
 	
-	@Override
-	public int vist(MyArray array) {
-		try {
+	try {
 		int input = readFile();
-		return input;
+		while(input!=-12083) {
+//		 input = readFile();
+		myArray.insertElements(input);
+		}
 		}catch(IOException ex) {
 			ex.printStackTrace();
 			
 		}
 		return 0;
-		
-//		String line = Driver.getInput(input);
-		
-		
-		
-		
-	}
-	
-
-	@Override
-	public int visit(MyVector vector) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+}
 
 }

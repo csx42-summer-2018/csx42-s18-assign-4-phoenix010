@@ -2,5 +2,5 @@ package maxKVisitors.util;
 
 public interface Visitable {
  
-	void accept(Visitor visitor);
+	int accept(Visitor visitor);
 }

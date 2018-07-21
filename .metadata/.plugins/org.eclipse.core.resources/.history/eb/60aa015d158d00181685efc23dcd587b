@@ -1,0 +1,30 @@
+package maxKVisitors.util;
+
+import java.util.ArrayList;
+
+public class MyArray implements Visitable {
+	
+	private  ArrayList<MyArray> myArr;
+
+	public MyArray() {
+		this.myArr = new ArrayList();
+	}
+	public void insertElements(int input) {
+		myArr.add(input);
+		
+		
+		
+		
+		
+	}
+	
+	
+	@Override
+	public int accept(Visitor visitor) {
+		
+		 return visitor.visit(this);
+		
+		
+	}
+
+}

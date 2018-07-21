@@ -17,12 +17,10 @@ public class Driver {
 	
 		String input = args[0];
 		PopulateVisitor ppt = new PopulateVisitor(input);
-		ppt.readFile();
-//		FileProcessor file = new FileProcessor(input);
-//		ppt.readFile(input);
-		
+
+
 		MyArray arr = new MyArray();
-		arr.accept(ppt);
+		arr.accept(ppt); //populatevisitor is called
 		
 		
 		
