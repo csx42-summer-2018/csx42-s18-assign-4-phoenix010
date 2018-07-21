@@ -11,10 +11,6 @@ public class MyVector implements Visitable {
 		this.vec = new Vector<>();
 		
 	}
-	public void insertElements(int input) {
-		vec.add(Integer.valueOf(input));
-		System.out.println(vec);
-	}
 	
 	
 	

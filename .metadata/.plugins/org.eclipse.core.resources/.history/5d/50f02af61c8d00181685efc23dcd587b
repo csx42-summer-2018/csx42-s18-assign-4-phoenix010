@@ -23,31 +23,8 @@ public class PopulateVisitor implements Visitor {
 	
 @Override
 	public int visit(MyVector vector) {
-	
-	try {
-		
-		FileProcessor file = new FileProcessor(input);
-		int line;
-		while((line = file.nextInt()) != -12083) {
-			vector.insertElements(line);
-		}
-		return -12083;
-	
-		
-		
-		
-		
-//		int input = readFile();
-		
-//		 input = readFile();
-//		myArray.insertElements(input);
-//		}
-		}catch(IOException ex) {
-			ex.printStackTrace();
-			
-		}
-		return -12083;
-
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 @Override

@@ -7,7 +7,6 @@ import java.io.IOException;
 
 import maxKVisitors.util.FileProcessor;
 import maxKVisitors.util.MyArray;
-import maxKVisitors.util.MyVector;
 import maxKVisitors.util.PopulateVisitor;
 
 public class Driver {
@@ -21,12 +20,8 @@ public class Driver {
 
 
 		MyArray arr = new MyArray();
-		System.out.println("Our ArrayList is: ");
 		arr.accept(ppt); //populatevisitor is called
 		
-		MyVector vectors = new MyVector();
-		System.out.println("Our Vectors are as follows");
-		vectors.accept(ppt);
 		
 		
 		
