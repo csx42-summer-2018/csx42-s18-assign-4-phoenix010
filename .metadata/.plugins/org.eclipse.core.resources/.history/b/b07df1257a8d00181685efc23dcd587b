@@ -5,21 +5,17 @@ import java.util.ArrayList;
 public class MyArray implements Visitable, Insertion,HeapVisitable, BubbleVisitable{
 	
 	private  ArrayList<Integer> myArr;
-	private int size;
 
 	public MyArray() {
 		this.myArr = new ArrayList<Integer>();
-		this.size = myArr.size();
-	}
-	public int getSize() {
-		return size;
-	}
-	public ArrayList<Integer> getMyArr() {
-		return myArr;
 	}
 	public void insertElements(int input) {
 		myArr.add(Integer.valueOf(input));
 //		System.out.println(myArr);
+	}
+	
+	public ArrayList<Integer> getMyArr() {
+		return myArr;
 	}
 	@Override
 	public int accept(Visitor visitor) {

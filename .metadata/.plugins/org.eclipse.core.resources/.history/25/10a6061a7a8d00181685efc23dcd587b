@@ -6,21 +6,18 @@ import java.util.Vector;
 public class MyVector implements Visitable, Insertion,HeapVisitable, BubbleVisitable{
 
 	private Vector<Integer> vec;
-	private int size;
 	
 	public MyVector() {
 		this.vec = new Vector<>();
-		this.size = vec.size();
-	}
-	public int getSize() {
-		return size;
-	}
-	public Vector<Integer> getVec() {
-		return vec;
+		
 	}
 	public void insertElements(int input) {
 		vec.add(Integer.valueOf(input));
 //		System.out.println(vec);
+	}
+	
+	public Vector<Integer> getVec() {
+		return vec;
 	}
 	@Override
 	public int accept(Visitor visitor) {

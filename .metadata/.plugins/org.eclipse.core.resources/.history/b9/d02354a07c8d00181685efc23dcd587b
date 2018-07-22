@@ -67,11 +67,8 @@ public class Driver {
 		int size = arr.getMyArr().size();
 		MaxelementsDisplay display = new MaxelementsDisplay();
 		display.printElement(k, size, result1);
-		System.out.println();
 		display.printElement(k, size, result2);
-		System.out.println();
 		display.printElement(k, size, result3);
-		System.out.println();
 		display.printElement(k, size, result4);
 		
 		

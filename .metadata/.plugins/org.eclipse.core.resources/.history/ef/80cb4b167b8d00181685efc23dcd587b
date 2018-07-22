@@ -45,8 +45,8 @@ public class Driver {
 		System.out.println("MaxHeapVisitor for ArrayList");
 		MaxHeapVisitor heap = new MaxHeapVisitor(arr.getMyArr()); 
 
-		int[] result1 = arr.acceptHeap(heap);
-		System.out.println(Arrays.toString(result1));
+		int[] result = arr.acceptHeap(heap);
+		System.out.println(Arrays.toString(result));
 		
 		System.out.println("MaxHeapVisitor for Vectors");
 		MaxHeapVisitor heap1 = new MaxHeapVisitor(vec.getVec());
@@ -64,15 +64,18 @@ public class Driver {
 		System.out.println(Arrays.toString(result4));
 		
 		System.out.println("Now we will calculate max K elements");
-		int size = arr.getMyArr().size();
-		MaxelementsDisplay display = new MaxelementsDisplay();
-		display.printElement(k, size, result1);
-		System.out.println();
-		display.printElement(k, size, result2);
-		System.out.println();
-		display.printElement(k, size, result3);
-		System.out.println();
-		display.printElement(k, size, result4);
+		
+		if(k > arr.getSize() || k ==0) {
+			System.out.println("You have inserted an invalid value of k. So we can't display the max K elements");
+		}
+		else {
+			
+			
+			
+			
+			
+			
+		}
 		
 		
 		
