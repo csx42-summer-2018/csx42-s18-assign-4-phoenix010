@@ -1,0 +1,13 @@
+package maxKVisitors.util;
+
+public interface HeapVisitor {
+
+
+	void visitHeap(MyVector vector);
+	static int visitHeap(MyArray myArray) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+}

@@ -3,9 +3,9 @@ package maxKVisitors.util;
 
 import java.util.Vector;
 
-public class MyVector implements Visitable, Insertion {
+public class MyVector implements Visitable, Insertion,HeapVisitable {
 
-	private  Vector<Integer> vec;
+	private Vector<Integer> vec;
 	
 	public MyVector() {
 		this.vec = new Vector<>();
@@ -26,4 +26,10 @@ public class MyVector implements Visitable, Insertion {
 		
 		
 	}
+	@Override
+	public int[] acceptHeap(HeapVisitor visitor) {
+		return visitor.visitHeap(this);
+	}
+	
+
 }

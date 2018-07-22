@@ -1,0 +1,81 @@
+package maxKVisitors.util;
+import maxKVisitors.util.FileProcessor;
+
+import java.io.IOException;
+
+
+
+public class PopulateVisitor implements Visitor {
+	private String input; 
+	
+	public PopulateVisitor(String input) {
+		this.input = input;
+	}
+	
+//	public int readFile() throws IOException {
+//		FileProcessor file = new FileProcessor(input);
+//		int line;
+//		while((line = file.nextInt()) != -12083) {
+//			return line;
+//		}
+//		return -12083;
+//	}
+	
+@Override
+	public int visit(MyVector vector) {
+	
+	try {
+		
+		FileProcessor file = new FileProcessor(input);
+		int line;
+		while((line = file.nextInt()) != -12083) {
+			vector.insertElements(line);
+		}
+		return -12083;
+	
+		
+		
+		
+		
+//		int input = readFile();
+		
+//		 input = readFile();
+//		myArray.insertElements(input);
+//		}
+		}catch(IOException ex) {
+			ex.printStackTrace();
+			
+		}
+		return -12083;
+
+	}
+
+@Override
+public int visit(MyArray myArray) {
+	
+	try {
+		
+		FileProcessor file = new FileProcessor(input);
+		int line;
+		while((line = file.nextInt()) != -12083) {
+			myArray.insertElements(line);
+		}
+		
+	
+		
+		
+		
+		
+//		int input = readFile();
+		
+//		 input = readFile();
+//		myArray.insertElements(input);
+//		}
+		}catch(IOException ex) {
+			ex.printStackTrace();
+			
+		}
+		return -1;
+}
+
+}

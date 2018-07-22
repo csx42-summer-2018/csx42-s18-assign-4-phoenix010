@@ -12,15 +12,7 @@ public class PopulateVisitor implements Visitor {
 		this.input = input;
 	}
 	
-//	public int readFile() throws IOException {
-//		FileProcessor file = new FileProcessor(input);
-//		int line;
-//		while((line = file.nextInt()) != -12083) {
-//			return line;
-//		}
-//		return -12083;
-//	}
-	
+
 @Override
 	public int visit(MyVector vector) {
 	
@@ -32,16 +24,7 @@ public class PopulateVisitor implements Visitor {
 			vector.insertElements(line);
 		}
 		return -12083;
-	
-		
-		
-		
-		
-//		int input = readFile();
-		
-//		 input = readFile();
-//		myArray.insertElements(input);
-//		}
+
 		}catch(IOException ex) {
 			ex.printStackTrace();
 			
@@ -60,17 +43,7 @@ public int visit(MyArray myArray) {
 		while((line = file.nextInt()) != -12083) {
 			myArray.insertElements(line);
 		}
-		
 	
-		
-		
-		
-		
-//		int input = readFile();
-		
-//		 input = readFile();
-//		myArray.insertElements(input);
-//		}
 		}catch(IOException ex) {
 			ex.printStackTrace();
 			

@@ -4,8 +4,9 @@
 package maxKVisitors.driver;
 
 import java.io.IOException;
+import java.util.Arrays;
 
-
+import maxKVisitors.util.MaxHeapVisitor;
 import maxKVisitors.util.MyArray;
 import maxKVisitors.util.MyVector;
 import maxKVisitors.util.PopulateVisitor;
@@ -18,15 +19,19 @@ public class Driver {
 	
 		String input = args[0];
 		String k = args[1];
+		
 		PopulateVisitor ppt = new PopulateVisitor(input);
-
-
+		
 		MyArray arr = new MyArray();
 		MyArray arr1 = new MyArray();
+		
 		MyVector vector1 = new MyVector();
 		MyVector vector2 = new MyVector();
-		 //populatevisitor is called
-
+		
+//		MaxHeapVisitor heap = new MaxHeapVisitor(); // for ArrayList
+//		MaxHeapVisitor heap1 = new MaxHeapVisitor(); // for vectors
+		
+		
 		System.out.println("Our ArrayList is: ");
 		arr.accept(ppt);
 		arr1.accept(ppt);
@@ -42,11 +47,18 @@ public class Driver {
 		System.out.println(vector2.getVec());
 		
 		
+		System.out.println("MaxHeapVisitor for ArrayList");
+		MaxHeapVisitor heap = new MaxHeapVisitor(arr.getMyArr()); // for ArrayList
+
+		int[] result = arr.acceptHeap(heap);
+		System.out.println(Arrays.toString(result));
 		
+		System.out.println("MaxHeapVisitor for Vectors");
+		MaxHeapVisitor heap1 = new MaxHeapVisitor(vector1.getVec());
+		int [] result2 = vector1.acceptHeap(heap1);
+		System.out.println(Arrays.toString(result2));
 		
-		
-		
-		
+		System.out.println("BubbleSorting in decreasing order for ArrayList");
 		
 		
 		

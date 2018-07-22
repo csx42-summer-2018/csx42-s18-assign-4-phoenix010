@@ -2,7 +2,7 @@ package maxKVisitors.util;
 
 import java.util.ArrayList;
 
-public class MyArray implements Visitable, Insertion {
+public class MyArray implements Visitable, Insertion,HeapVisitable{
 	
 	private  ArrayList<Integer> myArr;
 
@@ -24,8 +24,12 @@ public class MyArray implements Visitable, Insertion {
 	public int accept(Visitor visitor) {
 		
 		 return visitor.visit(this);
-		
-		
+	}
+	
+	@Override
+	public int[] acceptHeap(HeapVisitor visitor) {
+		 return visitor.visitHeap(this);
 	}
 
+	
 }

@@ -1,0 +1,72 @@
+package maxKVisitors.util;
+
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Vector;
+
+public class MaxHeapVisitor implements HeapVisitor{
+
+	private int[] heap;
+	private int size;
+	
+	public MaxHeapVisitor() {
+//		this.size= myArr.size();
+//		this.heap = Arrays.copyOf(heap, size);
+//		for(int i=0; i<myArr.size(); i++) {
+//			 heap[i] = myArr.get(i).intValue();
+//		}
+	}
+	
+//	public MaxHeapVisitor(Vector <Integer> vector) {
+//		this.size = vector.size();
+//		this.heap = Arrays.copyOf(heap, size);
+//		for(int i=0; i<vector.size(); i++) {
+//			 heap[i] = vector.get(i).intValue();
+//		}
+//	}
+	
+
+
+	public int[] getHeap() {
+		return heap;
+	}
+
+	public int getSize() {
+		return size;
+	}
+
+	@Override
+	public void visitHeap(MyVector vector) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int visitHeap(MyArray myArr) {
+		
+			this.size= myArr.getMyArr().size();
+			this.heap = Arrays.copyOf(heap, size);
+			for(int i=0; i< size; i++) {
+				 heap[i] = myArr.getMyArr().get(i).intValue(); 
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			return 0;
+	}
+
+}

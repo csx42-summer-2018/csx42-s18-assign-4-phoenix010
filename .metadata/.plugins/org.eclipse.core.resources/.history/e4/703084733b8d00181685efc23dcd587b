@@ -1,0 +1,25 @@
+package maxKVisitors.util;
+
+public class MaxHeapVisitor implements Visitor {
+
+	
+	
+	
+	
+	
+	
+	
+	
+	@Override
+	public int visit(MyVector vector) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int visit(MyArray myArray) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

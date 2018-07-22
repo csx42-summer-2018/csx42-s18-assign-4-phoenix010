@@ -1,0 +1,7 @@
+package maxKVisitors.util;
+
+public interface MaxHeapVisitor {
+
+	void visit(MyVector vector);
+	void visit(MyArray myArray);
+}
