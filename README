@@ -1,0 +1,68 @@
+
+Assuming you are in the directory containing this README:
+
+## To clean:
+ant -buildfile src/build.xml clean
+
+-----------------------------------------------------------------------
+## To compile: 
+ant -buildfile src/build.xml all
+
+-----------------------------------------------------------------------
+## To run by specifying arguments from command line 
+## We will use this to run your code
+ant -buildfile src/build.xml run -Darg0=FIRST -Darg1=SECOND -Darg2=THIRD
+
+-----------------------------------------------------------------------
+
+## To create tarball for submission
+ant -buildfile src/build.xml tarzip or tar -zcvf firstName_secondName_assign_number.tar.gz firstName_secondName_assign_number
+
+-----------------------------------------------------------------------
+
+"I have done this assignment completely on my own. I have not copied
+it, nor have I given my solution to anyone else. I understand that if
+I am involved in plagiarism or cheating I will have to sign an
+official form that I have cheated and that this form will be stored in
+my official university record. I also understand that I will receive a
+grade of 0 for the involved assignment for my first offense and that I
+will receive a grade of F for the course for any additional
+offense.”
+
+[Date: 7/22/2018]
+
+-----------------------------------------------------------------------
+
+Provide justification for Data Structures used in this assignment in
+term of Big O complexity (time and/or space)
+
+We have used ArrayList, vectors and arrays as data structure for this assignment. We used them as they are instructed to use them as according to the project guidelines. Although in some cases, I have preferred using ArrayList inplace of arrays as there size is dynamic and easy to implement. As in term of time complexity, the time complexity of inserting an item at the back of an array amd in the arraylist is same. It's O(1). But, we don't need to worry about the size in arraylist. That is the advantage of using arraylist.The Space complexity in boh cases will be O(n).
+
+
+-----------------------------------------------------------------------
+
+Provide list of citations (urls, etc.) from where you have taken code
+(if any).
+I have used these References:
+
+1. For Heap sort
+
+"https://geeksforgeeks.org/heap-sort/"
+
+2. Its for reading the file:
+
+"https://stackoverflow.com/questions/326390/how-do-i-create-a-java-string-from-the-contents-of-a-file"
+
+3. For Bubble Sort.
+
+My code of bubble sort is allmost same as that of I have used in assignment1. THe only difference between them is that here, we are sorting in descending order. While in assignment1, we were sorting array in ascending order.
+
+
+
+
+
+
+
+
+
+

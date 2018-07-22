@@ -6,10 +6,10 @@ package maxKVisitors.driver;
 import java.io.IOException;
 import java.util.Arrays;
 
+import maxKVisitors.driver.util1.PopulateVisitor;
 import maxKVisitors.util.MyArray;
 import maxKVisitors.util.MyVector;
 import maxKVisitors.util.Results;
-import maxKVisitors.util1.PopulateVisitor;
 import maxKVisitors.util2.ModifiedBubbleSortVisitor;
 import maxKVisitors.util3.MaxHeapVisitor;
 
