@@ -2,7 +2,7 @@ package maxKVisitors.util;
 
 import java.util.ArrayList;
 
-public class MyArray implements Visitable, Insertion,HeapVisitable, BubbleVisitable{
+public class MyArray implements Visitable, Insertion,HeapVisitable{
 	
 	private  ArrayList<Integer> myArr;
 
@@ -13,6 +13,9 @@ public class MyArray implements Visitable, Insertion,HeapVisitable, BubbleVisita
 		myArr.add(Integer.valueOf(input));
 //		System.out.println(myArr);
 	}
+	
+	
+	
 	
 	public ArrayList<Integer> getMyArr() {
 		return myArr;
@@ -27,10 +30,6 @@ public class MyArray implements Visitable, Insertion,HeapVisitable, BubbleVisita
 	public int[] acceptHeap(HeapVisitor visitor) {
 		 return visitor.visitHeap(this);
 	}
-	@Override
-	public int[] acceptBubbleSort(BubbleVisitor visitor) {
-		return visitor.visitBubbleSort(this);
-	}
-	
+
 	
 }

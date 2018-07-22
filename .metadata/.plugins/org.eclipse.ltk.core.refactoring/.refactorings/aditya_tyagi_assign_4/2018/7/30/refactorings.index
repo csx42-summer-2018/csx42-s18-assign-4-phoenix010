@@ -5,3 +5,5 @@
 1532231610391	Rename compilation unit 'MaxHeap.java'
 1532234902363	Rename local variable 'start'
 1532234915386	Rename local variable 'end'
+1532241256476	Rename local variable 'vector1'
+1532241268023	Rename local variable 'vector2'

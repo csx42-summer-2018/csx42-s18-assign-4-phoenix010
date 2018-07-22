@@ -31,19 +31,14 @@ public class ModifiedBubbleSortVisitor implements BubbleVisitor{
 
 	@Override
 	public int[] visitBubbleSort(MyVector vector) {
-		BubbleSort bs = new BubbleSort();
-		int [] result = bs.sortedArray(this.arr);
-//		result = reverseArray(result,0,(result.length-1));
-		return result;
-
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
 	public int[] visitBubbleSort(MyArray myArray) {
-		BubbleSort bs = new BubbleSort();
-		int [] result = bs.sortedArray(this.arr);
-//		result = reverseArray(result,0,(result.length-1));
-		return result;
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

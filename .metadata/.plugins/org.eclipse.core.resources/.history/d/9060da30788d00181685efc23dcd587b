@@ -28,9 +28,9 @@ public class MyArray implements Visitable, Insertion,HeapVisitable, BubbleVisita
 		 return visitor.visitHeap(this);
 	}
 	@Override
-	public int[] acceptBubbleSort(BubbleVisitor visitor) {
+	public int[] acceptHeap(BubbleVisitor visitor) {
 		return visitor.visitBubbleSort(this);
 	}
-	
+
 	
 }

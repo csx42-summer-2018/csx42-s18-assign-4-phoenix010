@@ -31,6 +31,6 @@ public class MyArray implements Visitable, Insertion,HeapVisitable, BubbleVisita
 	public int[] acceptBubbleSort(BubbleVisitor visitor) {
 		return visitor.visitBubbleSort(this);
 	}
-	
+
 	
 }

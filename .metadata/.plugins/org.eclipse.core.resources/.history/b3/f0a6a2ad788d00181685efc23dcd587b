@@ -29,10 +29,9 @@ public class MyVector implements Visitable, Insertion,HeapVisitable, BubbleVisit
 		return visitor.visitHeap(this);
 	}
 	@Override
-	public int[] acceptBubbleSort(BubbleVisitor visitor) {
+	public int[] acceptHeap(BubbleVisitor visitor) {
 		return visitor.visitBubbleSort(this);
 	}
-	
-	
+
 
 }

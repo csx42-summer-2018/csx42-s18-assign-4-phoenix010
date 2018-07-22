@@ -3,7 +3,7 @@ package maxKVisitors.util;
 
 import java.util.Vector;
 
-public class MyVector implements Visitable, Insertion,HeapVisitable, BubbleVisitable{
+public class MyVector implements Visitable, Insertion,HeapVisitable {
 
 	private Vector<Integer> vec;
 	
@@ -23,16 +23,13 @@ public class MyVector implements Visitable, Insertion,HeapVisitable, BubbleVisit
 	public int accept(Visitor visitor) {
 		
 		 return visitor.visit(this);
+		
+		
 	}
 	@Override
 	public int[] acceptHeap(HeapVisitor visitor) {
 		return visitor.visitHeap(this);
 	}
-	@Override
-	public int[] acceptBubbleSort(BubbleVisitor visitor) {
-		return visitor.visitBubbleSort(this);
-	}
-	
 	
 
 }

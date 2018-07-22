@@ -27,7 +27,7 @@ public class Driver {
 		MyArray arr1 = new MyArray();
 		
 		MyVector vec = new MyVector();
-		MyVector vec1 = new MyVector();
+		MyVector vector2 = new MyVector();
 
 		System.out.println("Our ArrayList is: ");
 		arr.accept(ppt);
@@ -37,9 +37,9 @@ public class Driver {
 		
 		System.out.println("Our Vectors are as follows");
 		vec.accept(ppt);
-		vec1.accept(ppt);
+		vector2.accept(ppt);
 		System.out.println(vec.getVec());
-		System.out.println(vec1.getVec());
+		System.out.println(vector2.getVec());
 		
 		
 		System.out.println("MaxHeapVisitor for ArrayList");
@@ -59,7 +59,7 @@ public class Driver {
 		System.out.println(Arrays.toString(result3));
 		
 		System.out.println("BubbleSorting in decreasing order for Vectors");
-		ModifiedBubbleSortVisitor mb1 = new ModifiedBubbleSortVisitor(vec1.getVec());
+		ModifiedBubbleSortVisitor mb1 = new ModifiedBubbleSortVisitor(vector2.getVec());
 		int[] result4 = arr1.acceptBubbleSort(mb1);
 		System.out.println(Arrays.toString(result4));
 		

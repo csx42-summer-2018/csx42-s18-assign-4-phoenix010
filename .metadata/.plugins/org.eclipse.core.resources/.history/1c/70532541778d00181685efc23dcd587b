@@ -1,0 +1,17 @@
+package maxKVisitors.util;
+
+public class ModifiedBubbleSortVisitor implements BubbleVisitor{
+
+	@Override
+	public int[] visitBubbleSort(MyVector vector) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int[] visitBubbleSort(MyArray myArray) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
