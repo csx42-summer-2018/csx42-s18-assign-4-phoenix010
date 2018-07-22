@@ -2,6 +2,13 @@ package maxKVisitors.util;
 
 import java.util.ArrayList;
 
+import maxKVisitors.driver.util1.Visitable;
+import maxKVisitors.driver.util1.Visitor;
+import maxKVisitors.util2.BubbleVisitable;
+import maxKVisitors.util2.BubbleVisitor;
+import maxKVisitors.util3.HeapVisitable;
+import maxKVisitors.util3.HeapVisitor;
+
 public class MyArray implements Visitable, Insertion,HeapVisitable, BubbleVisitable{
 	
 	private  ArrayList<Integer> myArr;

@@ -1,0 +1,8 @@
+package maxKVisitors.driver.util3;
+
+import maxKVisitors.util.Visitor;
+
+public interface Visitable {
+ 
+	int accept(Visitor visitor);
+}

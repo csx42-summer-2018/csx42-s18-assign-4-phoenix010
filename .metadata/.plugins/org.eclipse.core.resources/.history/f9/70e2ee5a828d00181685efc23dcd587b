@@ -1,0 +1,6 @@
+package maxKVisitors.util1;
+
+public interface BubbleVisitable {
+
+	int[] acceptBubbleSort(BubbleVisitor visitor);
+}

@@ -1,0 +1,8 @@
+package maxKVisitors.util2;
+
+import maxKVisitors.util.HeapVisitor;
+
+public interface HeapVisitable {
+	 
+	int[] acceptHeap(HeapVisitor visitor);
+}

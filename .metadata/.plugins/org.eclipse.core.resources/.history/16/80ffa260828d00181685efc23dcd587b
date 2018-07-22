@@ -1,0 +1,6 @@
+package maxKVisitors.util2;
+
+public interface HeapVisitable {
+	 
+	int[] acceptHeap(HeapVisitor visitor);
+}

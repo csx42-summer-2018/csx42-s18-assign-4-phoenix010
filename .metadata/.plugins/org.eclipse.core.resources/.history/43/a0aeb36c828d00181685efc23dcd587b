@@ -1,0 +1,6 @@
+package maxKVisitors.driver.u;
+
+public interface Visitable {
+ 
+	int accept(Visitor visitor);
+}

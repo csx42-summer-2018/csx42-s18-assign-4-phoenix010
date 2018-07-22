@@ -1,0 +1,96 @@
+//path of file: /home/aditya/Desktop/input.txt
+
+
+package maxKVisitors.driver;
+
+import java.io.IOException;
+import java.util.Arrays;
+
+import maxKVisitors.driver.util1.PopulateVisitor;
+import maxKVisitors.util.MyArray;
+import maxKVisitors.util.MyVector;
+import maxKVisitors.util.Results;
+import maxKVisitors.util2.ModifiedBubbleSortVisitor;
+import maxKVisitors.util3.MaxHeapVisitor;
+
+public class Driver {
+
+	public static void main(String[] args) throws IOException {
+		try {		
+		String input = args[0];
+		int k = Integer.parseInt(args[1]);
+		
+		PopulateVisitor ppt = new PopulateVisitor(input);
+		
+		MyArray arr = new MyArray();
+		MyArray arr1 = new MyArray();
+		
+		MyVector vec = new MyVector();
+		MyVector vec1 = new MyVector();
+
+//		System.out.println("Our ArrayList is: ");
+		arr.accept(ppt);
+		arr1.accept(ppt);
+//		System.out.println(arr.getMyArr());
+//		System.out.println(arr1.getMyArr());
+		
+//		System.out.println("Our Vectors are as follows");
+		vec.accept(ppt);
+		vec1.accept(ppt);
+//		System.out.println(vec.getVec());
+//		System.out.println(vec1.getVec());
+		
+		
+//		System.out.println("MaxHeapVisitor for ArrayList");
+		MaxHeapVisitor heap = new MaxHeapVisitor(arr.getMyArr()); 
+
+		int[] result1 = arr.acceptHeap(heap);
+//		System.out.println(Arrays.toString(result1));
+		
+//		System.out.println("MaxHeapVisitor for Vectors");
+		MaxHeapVisitor heap1 = new MaxHeapVisitor(vec.getVec());
+		int [] result2 = vec.acceptHeap(heap1);
+//		System.out.println(Arrays.toString(result2));
+		
+//		System.out.println("BubbleSorting in decreasing order for ArrayList");
+		ModifiedBubbleSortVisitor mb = new ModifiedBubbleSortVisitor(arr1.getMyArr());
+		int[] result3 = arr1.acceptBubbleSort(mb);
+//		System.out.println(Arrays.toString(result3));
+		
+//		System.out.println("BubbleSorting in decreasing order for Vectors");
+		ModifiedBubbleSortVisitor mb1 = new ModifiedBubbleSortVisitor(vec1.getVec());
+		int[] result4 = arr1.acceptBubbleSort(mb1);
+//		System.out.println(Arrays.toString(result4));
+		
+//		System.out.println("Now we will calculate max K elements");
+		int size = arr.getMyArr().size();
+		MaxelementsDisplay display = new MaxelementsDisplay();
+
+		Results rs = new Results();
+		
+		if(k > size || k <=0) {
+			rs.writeToStdout("You have inserted an invalid value of k. So we can't display the max K elements");
+			System.exit(0);
+		}
+		
+		
+		result1 = display.printElement(k, size, result1);
+		result2 = display.printElement(k, size, result2);
+		result3 = display.printElement(k, size, result3);
+		result4 = display.printElement(k, size, result4);
+
+		System.out.println("The max K elements are:");
+		rs.writeToStdout(Arrays.toString(result1));
+		System.out.println();
+		rs.writeToStdout(Arrays.toString(result2));
+		System.out.println();
+		rs.writeToStdout(Arrays.toString(result3));
+		System.out.println();
+		rs.writeToStdout(Arrays.toString(result4));
+		}catch(ArrayIndexOutOfBoundsException ex) {
+			System.out.println("You need to insert some input in your command line");
+			System.out.println("Exiting");
+	}
+}
+}
+

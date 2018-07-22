@@ -1,0 +1,8 @@
+package maxKVisitors.util;
+
+import maxKVisitors.util.Visitor;
+
+public interface Visitable {
+ 
+	int accept(Visitor visitor);
+}

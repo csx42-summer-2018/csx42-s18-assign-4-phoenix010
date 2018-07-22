@@ -7,3 +7,21 @@
 1532234915386	Rename local variable 'end'
 1532241256476	Rename local variable 'vector1'
 1532241268023	Rename local variable 'vector2'
+1532244990070	Move compilation unit
+1532244999480	Move compilation unit
+1532245030484	Move compilation unit
+1532245044372	Move compilation unit
+1532245062100	Move compilation unit
+1532245066147	Move compilation unit
+1532245071634	Move compilation unit
+1532245081938	Move compilation unit
+1532245121147	Move compilation unit
+1532245124991	Move compilation unit
+1532245129397	Move compilation unit
+1532245151308	Rename package 'maxKVisitors.driver.util3'
+1532245164571	Rename package 'maxKVisitors.util1'
+1532245174146	Rename package 'maxKVisitors.util2'
+1532245194391	Rename package 'maxKVisitors.driver.u'
+1532245211345	Rename package 'maxKVisitors.ut'
+1532245221142	Rename package 'maxKVisitors.util212'
+1532248148733	Rename compilation unit 'Logger.java'

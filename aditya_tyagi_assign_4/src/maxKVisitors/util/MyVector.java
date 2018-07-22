@@ -3,6 +3,13 @@ package maxKVisitors.util;
 
 import java.util.Vector;
 
+import maxKVisitors.driver.util1.Visitable;
+import maxKVisitors.driver.util1.Visitor;
+import maxKVisitors.util2.BubbleVisitable;
+import maxKVisitors.util2.BubbleVisitor;
+import maxKVisitors.util3.HeapVisitable;
+import maxKVisitors.util3.HeapVisitor;
+
 public class MyVector implements Visitable, Insertion,HeapVisitable, BubbleVisitable{
 
 	private Vector<Integer> vec;
