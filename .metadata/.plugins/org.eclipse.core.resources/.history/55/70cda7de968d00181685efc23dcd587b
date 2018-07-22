@@ -19,7 +19,6 @@ public class Validation {
 			System.exit(0);
 		}
 		
-		
 	}
 }
 ///home/aditya/Desktop/input.txt

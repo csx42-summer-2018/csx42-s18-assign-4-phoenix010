@@ -19,9 +19,7 @@ public class Driver {
 		try {		
 		Validation vd = new Validation();
 		vd.cmdValidation(args);
-//		System.out.println(args[0].length());
 		String input = args[0];
-
 		int k = Integer.parseInt(args[1]);
 		
 		PopulateVisitor ppt = new PopulateVisitor(input);
@@ -73,7 +71,7 @@ public class Driver {
 		Results rs = new Results();
 		
 		if(k > size || k <=0) {
-			rs.writeToStdout("You have inserted an invalid value of k or your input file is empty. So we can't display the max K elements");
+			rs.writeToStdout("You have inserted an invalid value of k. So we can't display the max K elements");
 			System.exit(0);
 		}
 		
@@ -83,7 +81,7 @@ public class Driver {
 		result3 = display.printElement(k, size, result3);
 		result4 = display.printElement(k, size, result4);
 
-		rs.writeToStdout("The max K elements are:");
+		System.out.println("The max K elements are:");
 		rs.writeToStdout(Arrays.toString(result1));
 		System.out.println();
 		rs.writeToStdout(Arrays.toString(result2));
@@ -95,10 +93,6 @@ public class Driver {
 			System.err.println("You missing some inputs in your command line. Check it again");
 			System.err.println("Exiting");
 	}
-		catch(NullPointerException e) {
-		System.err.println("There is no input file. Please pass the correct input file through command line");
-		System.err.println("Exiting");
-		}
 }
 }
 

@@ -18,7 +18,10 @@ public class Validation {
 			System.err.println("Command Line arguments cannot be more than three");
 			System.exit(0);
 		}
-		
+		if(args[0].contains(null)) {
+			System.err.println("Input file is empty");
+			System.exit(0);
+		}
 		
 	}
 }
